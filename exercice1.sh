@@ -6,10 +6,9 @@
 
 read -p "Mot :" mot 
 
-
 Existe=`wget -qO - http://dictionary.objectif8.com/exists.php?word=$mot`
 
-if test $Existe = "1"
+if test $mot = "1"
 then 
 	echo "Le mot existe"
 else
